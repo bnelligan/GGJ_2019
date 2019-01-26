@@ -38,7 +38,7 @@ public class PlayerStats : MonoBehaviour
             Debug.LogWarning("Stat is at minimum: " + stat.ToString());
             statLookup[stat] = 0;
         }
-    }
+    }g
 
     
 }
