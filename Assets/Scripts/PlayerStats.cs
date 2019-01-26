@@ -51,5 +51,4 @@ public class PlayerStats : MonoBehaviour
             statLookup[stat] = 0;
         }
     }
-    
 }
