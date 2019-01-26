@@ -65,6 +65,7 @@ public abstract class LifeEvent : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("TRIGGERED");
         stats = collision.GetComponent<PlayerStats>();
         if(stats && CanTriggerEvent())
         {
