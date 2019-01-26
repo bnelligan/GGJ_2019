@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Stat
+public enum LifeStat
 {
     ROMANCE,
     WEALTH,
@@ -13,15 +13,15 @@ public enum Stat
 public class PlayerStats : MonoBehaviour
 {
     public const int MAX_STAT_LEVEL = 5;
-    Dictionary<Stat, int> statLookup = new Dictionary<Stat, int>
+    Dictionary<LifeStat, int> statLookup = new Dictionary<LifeStat, int>
     {
-        [Stat.ROMANCE] = 0,
-        [Stat.WEALTH] = 0,
-        [Stat.WELLNESS] = 0,
-        [Stat.INTELLIGENCE] = 0
+        [LifeStat.ROMANCE] = 0,
+        [LifeStat.WEALTH] = 0,
+        [LifeStat.WELLNESS] = 0,
+        [LifeStat.INTELLIGENCE] = 0
     };
 
-    public void IncreaseStat(Stat stat)
+    public void IncreaseStat(LifeStat stat)
     {
         statLookup[stat]++;
         if (statLookup[stat] > MAX_STAT_LEVEL)
@@ -30,7 +30,7 @@ public class PlayerStats : MonoBehaviour
             statLookup[stat] = MAX_STAT_LEVEL;
         }
     }
-    public void DecreaseStat(Stat stat)
+    public void DecreaseStat(LifeStat stat)
     {
         statLookup[stat]--;
         if(statLookup[stat] < 0)
