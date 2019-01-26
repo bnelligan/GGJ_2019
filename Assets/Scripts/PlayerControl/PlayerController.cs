@@ -8,11 +8,13 @@ public class PlayerController : MonoBehaviour
     public float speed;
 
     public SpriteRenderer rightSprite;
+
     public SpriteRenderer leftSprite;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -20,7 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right * speed*Time.deltaTime, Space.World);
+            transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
             if (!rightSprite.enabled)
             {
                 rightSprite.enabled = true;
@@ -33,7 +35,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(-Vector3.right * speed*Time.deltaTime, Space.World);
+            transform.Translate(-Vector3.right * speed * Time.deltaTime, Space.World);
             if (rightSprite.enabled)
             {
                 rightSprite.enabled = false;
@@ -44,3 +46,5 @@ public class PlayerController : MonoBehaviour
                 leftSprite.enabled = true;
             }
         }
+    }
+}
