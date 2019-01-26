@@ -10,12 +10,31 @@ public abstract class LifeEvent : MonoBehaviour
     public LifeStat PrimaryStat { get; protected set; }
     protected PlayerStats stats;
     public bool IsTriggered { get; private set; }
+    GameObject prompt;
+    public bool IsPromptVisible { get { return prompt.activeInHierarchy; } }
+    public KeyCode ActivateKey = KeyCode.E;
 
     private void Start()
     {
         stats = FindObjectOfType<PlayerStats>();
+        prompt = Resources.Load("Prefabs/Prompt") as GameObject;
+        prompt = Instantiate(prompt, transform);
+        prompt.SetActive(false);
         IsTriggered = false;
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(ActivateKey) && IsPromptVisible)
+        {
+            TriggerEvent();
+        }
+        else if(!CanTriggerEvent() && IsPromptVisible)
+        {
+            HidePrompt();
+        }
+    }
+
     /// <summary>
     /// Override this. Call the base function last since it sets the IsTriggered flag
     /// </summary>
@@ -41,5 +60,31 @@ public abstract class LifeEvent : MonoBehaviour
             canTrigger = true;
         }
         return canTrigger;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        stats = collision.GetComponent<PlayerStats>();
+        if(stats && CanTriggerEvent())
+        {
+            // Show popup to activate the event
+            ShowPrompt();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        stats = collision.GetComponent<PlayerStats>();
+        if(stats && IsPromptVisible)
+        {
+            HidePrompt();
+        }
+    }
+    private void ShowPrompt()
+    {
+        prompt.SetActive(true);
+    }
+    private void HidePrompt()
+    {
+        prompt.SetActive(false);
     }
 }
