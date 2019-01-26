@@ -11,10 +11,12 @@ public class PlayerController : MonoBehaviour
 
     public SpriteRenderer leftSprite;
 
+    private SpriteRenderer defaultSprite;
     // Start is called before the first frame update
     void Start()
     {
-
+        defaultSprite = leftSprite;
+        defaultSprite.enabled = false;
     }
 
     // Update is called once per frame
