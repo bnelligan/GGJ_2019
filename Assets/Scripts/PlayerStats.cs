@@ -41,6 +41,10 @@ public class PlayerStats : MonoBehaviour
             Debug.LogWarning("Stat is at max: " + stat.ToString());
             statLookup[stat] = MAX_STAT_LEVEL;
         }
+        else
+        {
+            Debug.Log($"{stat.ToString()} stat increased to {statLookup[stat]}");
+        }
     }
     public void DecreaseStat(LifeStat stat)
     {
@@ -50,5 +54,10 @@ public class PlayerStats : MonoBehaviour
             Debug.LogWarning("Stat is at minimum: " + stat.ToString());
             statLookup[stat] = 0;
         }
+        else
+        {
+            Debug.Log($"{stat.ToString()} stat decreased to {statLookup[stat]}");
+        }
     }
+    
 }
