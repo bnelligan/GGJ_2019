@@ -7,16 +7,15 @@ public class PlayerController : MonoBehaviour
 
     public float speed;
 
-    public SpriteRenderer rightSprite;
+    public SpriteRenderer fatherSprite;
 
-    public SpriteRenderer leftSprite;
+    private bool moving;
 
-    private SpriteRenderer defaultSprite;
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        defaultSprite = leftSprite;
-        defaultSprite.enabled = false;
+    
     }
 
     // Update is called once per frame
@@ -24,29 +23,29 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
+            moving = true;
+            anim.SetBool("Moving", moving);
+            if (fatherSprite.flipX)
+            {
+                fatherSprite.flipX = false;
+            }
             transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
-            if (!rightSprite.enabled)
-            {
-                rightSprite.enabled = true;
-            }
-
-            if (leftSprite.enabled)
-            {
-                leftSprite.enabled = false;
-            }
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
+            moving = true;
+            anim.SetBool("Moving", moving);
+            if (!fatherSprite.flipX)
+            {
+                fatherSprite.flipX = true;
+            }
             transform.Translate(-Vector3.right * speed * Time.deltaTime, Space.World);
-            if (rightSprite.enabled)
-            {
-                rightSprite.enabled = false;
-            }
-
-            if (!leftSprite.enabled)
-            {
-                leftSprite.enabled = true;
-            }
+         
+        }
+        else
+        {
+            moving = false;
+            anim.SetBool("Moving", moving);
         }
     }
 }
