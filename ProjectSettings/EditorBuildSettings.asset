@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TransitionScene2.unity
     guid: 5504614164a1d2842b48bb13e35aa755
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ChildStage.unity
     guid: 184f38babafbfe4458d6ebc051f3b68a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PlayerController.unity
     guid: f777531e2452dfe4e95bdb85fb442292
   m_configObjects: {}
