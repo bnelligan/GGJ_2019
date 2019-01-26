@@ -17,8 +17,12 @@ public class BlocksEvent : LifeEvent
         {
             // Play animation of playing with the blocks
             stats.IncreaseStat(PrimaryStat);
+            base.TriggerEvent();
         }
-        base.TriggerEvent();
+        else
+        {
+            Debug.LogWarning($"Already triggered event {EventName}");
+        }
     }
     
 }

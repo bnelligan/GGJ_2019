@@ -53,7 +53,6 @@ public abstract class LifeEvent : MonoBehaviour
         bool canTrigger = false;
         if (IsTriggered)
         {
-            Debug.LogWarning($"Already triggered event {EventName}");
             canTrigger = false;
         }
         else
