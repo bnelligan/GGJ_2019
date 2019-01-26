@@ -10,8 +10,9 @@ public abstract class LifeEvent : MonoBehaviour
     public LifeStat PrimaryStat { get; protected set; }
     protected PlayerStats stats;
     public bool IsTriggered { get; private set; }
-    GameObject prompt;
     public bool IsPromptVisible { get { return prompt.activeInHierarchy; } }
+    public bool AutoTriggerEvent = false;
+    GameObject prompt;
     public KeyCode ActivateKey = KeyCode.E;
 
     private void Start()
@@ -68,7 +69,14 @@ public abstract class LifeEvent : MonoBehaviour
         if(stats && CanTriggerEvent())
         {
             // Show popup to activate the event
-            ShowPrompt();
+            if(AutoTriggerEvent)
+            {
+                TriggerEvent();
+            }
+            else
+            {
+                ShowPrompt();
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -79,6 +87,7 @@ public abstract class LifeEvent : MonoBehaviour
             HidePrompt();
         }
     }
+
     private void ShowPrompt()
     {
         prompt.SetActive(true);
