@@ -9,6 +9,13 @@ public enum LifeStat
     WELLNESS,
     INTELLIGENCE
 }
+public enum Age
+{
+    CHILD,
+    TEEN,
+    ADULT,
+    ELDERLY
+}
     
 public class PlayerStats : MonoBehaviour
 {
@@ -20,6 +27,11 @@ public class PlayerStats : MonoBehaviour
         [LifeStat.WELLNESS] = 0,
         [LifeStat.INTELLIGENCE] = 0
     };
+    public int Romance { get { return statLookup[LifeStat.ROMANCE]; } }
+    public int Wealth{ get { return statLookup[LifeStat.WEALTH]; } }
+    public int Wellness { get { return statLookup[LifeStat.WELLNESS]; } }
+    public int Intelligence { get { return statLookup[LifeStat.INTELLIGENCE]; } }
+    public Age PlayerAge;
 
     public void IncreaseStat(LifeStat stat)
     {
@@ -38,7 +50,6 @@ public class PlayerStats : MonoBehaviour
             Debug.LogWarning("Stat is at minimum: " + stat.ToString());
             statLookup[stat] = 0;
         }
-    }g
-
+    }
     
 }
