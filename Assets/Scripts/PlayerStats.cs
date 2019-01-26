@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum LifeStat
 {
@@ -27,6 +28,8 @@ public class PlayerStats : MonoBehaviour
         [LifeStat.WELLNESS] = 0,
         [LifeStat.INTELLIGENCE] = 0
     };
+
+    public Slider scoreSlider;
     public int Romance { get { return statLookup[LifeStat.ROMANCE]; } }
     public int Wealth{ get { return statLookup[LifeStat.WEALTH]; } }
     public int Wellness { get { return statLookup[LifeStat.WELLNESS]; } }
@@ -36,6 +39,8 @@ public class PlayerStats : MonoBehaviour
     public void IncreaseStat(LifeStat stat)
     {
         statLookup[stat]++;
+        scoreSlider = GameObject.FindWithTag(stat.ToString()).GetComponent<Slider>();
+        scoreSlider.value += 1;
         if (statLookup[stat] > MAX_STAT_LEVEL)
         {
             Debug.LogWarning("Stat is at max: " + stat.ToString());
@@ -49,6 +54,8 @@ public class PlayerStats : MonoBehaviour
     public void DecreaseStat(LifeStat stat)
     {
         statLookup[stat]--;
+        scoreSlider = GameObject.FindWithTag(stat.ToString()).GetComponent<Slider>();
+        scoreSlider.value -= 1;
         if(statLookup[stat] < 0)
         {
             Debug.LogWarning("Stat is at minimum: " + stat.ToString());
