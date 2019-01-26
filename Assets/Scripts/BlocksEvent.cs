@@ -24,5 +24,6 @@ public class BlocksEvent : LifeEvent
             Debug.LogWarning($"Already triggered event {EventName}");
         }
     }
-    
+
+
 }
