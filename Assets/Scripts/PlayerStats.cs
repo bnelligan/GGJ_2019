@@ -23,10 +23,10 @@ public class PlayerStats : MonoBehaviour
     public const int MAX_STAT_LEVEL = 5;
     Dictionary<LifeStat, int> statLookup = new Dictionary<LifeStat, int>
     {
-        [LifeStat.ROMANCE] = 0,
-        [LifeStat.WEALTH] = 0,
-        [LifeStat.WELLNESS] = 0,
-        [LifeStat.INTELLIGENCE] = 0
+        [LifeStat.ROMANCE] = 3,
+        [LifeStat.WEALTH] = 3,
+        [LifeStat.WELLNESS] = 3,
+        [LifeStat.INTELLIGENCE] = 3
     };
 
     public Slider scoreSlider;
@@ -36,6 +36,17 @@ public class PlayerStats : MonoBehaviour
     public int Intelligence { get { return statLookup[LifeStat.INTELLIGENCE]; } }
     public Age PlayerAge;
 
+    private void Awake()
+    {
+        SetInitialStats();
+    }
+    private void SetInitialStats()
+    {
+        GameObject.FindWithTag(LifeStat.ROMANCE.ToString()).GetComponent<Slider>().value = (float)statLookup[LifeStat.ROMANCE];
+        GameObject.FindWithTag(LifeStat.WEALTH.ToString()).GetComponent<Slider>().value = (float)statLookup[LifeStat.WEALTH];
+        GameObject.FindWithTag(LifeStat.WELLNESS.ToString()).GetComponent<Slider>().value = (float)statLookup[LifeStat.WELLNESS];
+        GameObject.FindWithTag(LifeStat.INTELLIGENCE.ToString()).GetComponent<Slider>().value = (float)statLookup[LifeStat.INTELLIGENCE];
+    }
     public void IncreaseStat(LifeStat stat)
     {
         statLookup[stat]++;
