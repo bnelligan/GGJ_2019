@@ -26,7 +26,7 @@ public class GoToWorkEvent : LifeEvent
     IEnumerator DriveToWork()
     {
         stats.gameObject.SetActive(false);
-        carAnim.SetBool("ToWork", true);
+        carAnim.SetBool("ToSchool", true);
         yield return new WaitForSeconds(2f);
         levelChanger.FadeToNextLevel();
         yield return new WaitForSeconds(.75f);
