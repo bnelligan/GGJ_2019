@@ -41,5 +41,11 @@ public class DadLeaves2 : MonoBehaviour
         mom.GetComponent<Animator>().SetBool("cry",true);
         yield return new WaitForSeconds(3f);
         player.GetComponent<PlayerController>().enabled = true;
+        GetComponent<BoxCollider2D>().enabled = false;
+    }
+
+    private void OnDisable()
+    {
+        GetComponent<BoxCollider2D>().enabled = true;
     }
 }

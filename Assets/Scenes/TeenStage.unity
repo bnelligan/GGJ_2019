@@ -1198,7 +1198,6 @@ GameObject:
   - component: {fileID: 1028110611}
   - component: {fileID: 1028110612}
   - component: {fileID: 1028110613}
-  - component: {fileID: 1028110614}
   m_Layer: 0
   m_Name: Stage
   m_TagString: Untagged
@@ -1233,7 +1232,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAge: 1
-  eventCount: 10
+  UseCustomScale: 0
+  playerScale: {x: 1, y: 1, z: 1}
 --- !u!114 &1028110613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,22 +1249,8 @@ MonoBehaviour:
   player: {fileID: 0}
   occupiedBed: {fileID: 1373579232}
   alarmAnim: {fileID: 1049426740}
+  startOffset: {x: 0, y: 0, z: 0}
   alarmIdle: {fileID: 21300000, guid: c78498c384f741d45908e0282016f858, type: 3}
---- !u!114 &1028110614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028110610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eea85b64356135848892f59298b3e05c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  teenAnim: {fileID: 9100000, guid: 51ba3a0c493a50346b3d32025c4695db, type: 2}
-  teenSprite: {fileID: 21300000, guid: 010b72b6e3ddd4e4b8f6bacde1a1284b, type: 3}
 --- !u!1 &1049426740
 GameObject:
   m_ObjectHideFlags: 0
