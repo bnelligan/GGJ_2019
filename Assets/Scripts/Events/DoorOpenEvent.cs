@@ -10,7 +10,7 @@ public class DoorOpenEvent : LifeEvent
     {
         EventName = "Open door";
         EventDescription = "Open door bruh";
-        
+        base.Awake();
     }
 
     public override void TriggerEvent()

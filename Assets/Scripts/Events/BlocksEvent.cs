@@ -9,6 +9,7 @@ public class BlocksEvent: LifeEvent
         EventName = "Blocks";
         EventDescription = "Playing with blocks can make you smarter";
         PrimaryStat = LifeStat.INTELLIGENCE;
+        base.Awake();
     }
 
     public override void TriggerEvent()

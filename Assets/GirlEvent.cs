@@ -15,6 +15,7 @@ public class GirlEvent : LifeEvent
         EventDescription = "Pretty cute, but she never pays any attention...";
         PrimaryStat = LifeStat.ROMANCE;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        base.Awake();
     }
     protected override void Update()
     {

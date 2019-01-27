@@ -10,7 +10,7 @@ public class LeaveBeachEvent : LifeEvent
         EventName = "Leave Beach" +
                     "";
         EventDescription = "leave beach bruh";
-
+        base.Awake();
     }
 
     public override void TriggerEvent()

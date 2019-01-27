@@ -12,6 +12,7 @@ public class SmokerEvent : LifeEvent
         EventName = "Smoker";
         EventDescription = "Smoking is bad for you... But girls might think you're cool?";
         PrimaryStat = LifeStat.ROMANCE;
+        base.Awake();
     }
 
     public override void TriggerEvent()

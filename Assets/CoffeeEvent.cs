@@ -9,6 +9,7 @@ public class CoffeeEvent : LifeEvent
         EventName = "Coffee!";
         EventDescription = "Nothin' like a cup-o-joe in the mornin'";
         PrimaryStat = LifeStat.WELLNESS;
+        base.Awake();
     }
     public override void TriggerEvent()
     {

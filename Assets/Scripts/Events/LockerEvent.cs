@@ -16,6 +16,7 @@ public class LockerEvent : LifeEvent
         EventDescription = "Cool stuff in here...";
         PrimaryStat = LifeStat.INTELLIGENCE;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        base.Awake();
     }
 
     public override void TriggerEvent()

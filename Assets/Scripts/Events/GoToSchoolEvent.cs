@@ -12,6 +12,7 @@ public class GoToSchoolEvent : LifeEvent
         player = FindObjectOfType<PlayerStats>().gameObject;
         EventName = "schoool";
         EventDescription = "go to school";
+        base.Awake();
     }
 
     public override void TriggerEvent()

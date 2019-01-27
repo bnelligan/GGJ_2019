@@ -10,6 +10,7 @@ public class SandCastleEvent : LifeEvent
         EventName = "Sand Castle";
         EventDescription = "Building sand castles is fun! It will make you happy.";
         PrimaryStat = LifeStat.WELLNESS;
+        base.Awake();
     }
 
     public override void TriggerEvent()

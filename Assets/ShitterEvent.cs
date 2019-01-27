@@ -9,6 +9,7 @@ public class ShitterEvent : LifeEvent
         EventName = "The Ole Shitter";
         EventDescription = "Everyone's gotta go...";
         PrimaryStat = LifeStat.WELLNESS;
+        base.Awake();
     }
 
     public override void TriggerEvent()

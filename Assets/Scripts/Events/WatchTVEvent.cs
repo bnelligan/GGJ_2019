@@ -14,7 +14,7 @@ public class WatchTVEvent : LifeEvent
         player = FindObjectOfType<PlayerStats>().gameObject;
         levelChanger = FindObjectOfType<LevelChanger>();
         PrimaryStat = LifeStat.ROMANCE;
-
+        base.Awake();
     }
 
     public override void TriggerEvent()

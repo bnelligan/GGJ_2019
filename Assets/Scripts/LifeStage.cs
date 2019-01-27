@@ -35,6 +35,10 @@ public class LifeStage : MonoBehaviour
         {
             player.transform.localScale = playerScale;
         }
+        else
+        {
+            player.transform.localScale = Vector3.one;
+        }
     }
     private void Start()
     {

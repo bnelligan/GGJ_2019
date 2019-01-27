@@ -16,6 +16,7 @@ public class GarbageEvent : LifeEvent
         {
             Loot = new List<GameObject>();
         }
+        base.Awake();
     }
 
     public override void TriggerEvent()
