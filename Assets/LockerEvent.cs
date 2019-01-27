@@ -5,6 +5,13 @@ using UnityEngine;
 public class LockerEvent : LifeEvent
 {
     SpriteRenderer renderer;
+
+    [SerializeField]
+    Sprite Sprite_MissingBook;
+    [SerializeField]
+    GameObject CarryingBook;
+
+
     private void Awake()
     {
         EventName = "Locker";
@@ -24,7 +31,9 @@ public class LockerEvent : LifeEvent
             }
             else
             {
-                
+                renderer.sprite = Sprite_MissingBook;
+                stats.IncreaseStat(PrimaryStat);
+                Debug.Log("Took Book!");
                 base.TriggerEvent();
             }
         }

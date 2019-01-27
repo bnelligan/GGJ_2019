@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SmokerEvent : LifeEvent
 {
+    [SerializeField]
+    GameObject cigPrefab;
+
     private void Awake()
     {
         EventName = "Smoker";
@@ -18,6 +21,7 @@ public class SmokerEvent : LifeEvent
             stats.DecreaseStat(LifeStat.WELLNESS);
             stats.DecreaseStat(LifeStat.INTELLIGENCE);
             stats.IncreaseStat(LifeStat.ROMANCE);
+            Instantiate(cigPrefab, stats.transform);
         }
 
         base.TriggerEvent();
