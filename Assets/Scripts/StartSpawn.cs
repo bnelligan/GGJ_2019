@@ -16,7 +16,7 @@ public class StartSpawn : MonoBehaviour
     {
 
         player.transform.position = transform.position;
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
     // Update is called once per frame

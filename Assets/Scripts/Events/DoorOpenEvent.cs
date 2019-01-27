@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorOpenEvent : LifeEvent
 {
     public GameObject door;
+    public GameObject wall;
     private void Awake()
     {
         EventName = "Open door";
@@ -17,10 +18,18 @@ public class DoorOpenEvent : LifeEvent
         if (CanTriggerEvent())
         {
             Debug.Log("open door");
-            if(door.activeSelf)
+            if (door.activeSelf)
+            {
                 door.SetActive(false);
+                wall.SetActive(true);
+            }
+
             else
+            {
                 door.SetActive(true);
+                wall.SetActive(false);
+            }
+                
             base.TriggerEvent();
             IsTriggered = false;
         }
