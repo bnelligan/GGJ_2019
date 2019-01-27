@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TeenStage.unity
     guid: d91e0e03b067b5b4a95de7d062ed831b
+  - enabled: 1
+    path: Assets/Scenes/School.unity
+    guid: 4b6cbf2b4617d4241ba559dcecb8b289
   m_configObjects: {}
