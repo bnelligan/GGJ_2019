@@ -1,14 +1,17 @@
 fileFormatVersion: 2
-guid: 87257ae80340e5b4e8594c7db0a726d1
+guid: bf29de5b90ddf164db471034b9a5771b
 TextureImporter:
   fileIDToRecycleName:
-    21300000: TheBar_0
-    21300002: TheBar_1
-    21300004: TheBar_2
-    21300006: TheBar_3
-    21300008: TheBar_4
-    21300010: TheBar_5
-    21300012: TheBar_6
+    21300000: HospitalBase_0
+    21300002: HospitalBase_1
+    21300004: HospitalBase_2
+    21300006: HospitalBase_3
+    21300008: HospitalBase_4
+    21300010: HospitalBase_5
+    21300012: HospitalBase_6
+    21300014: HospitalBase_7
+    21300016: HospitalBase_8
+    21300018: HospitalBase_9
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -91,7 +94,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TheBar_0
+      name: HospitalBase_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,13 +108,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 037cded80dc29db4d90db6c5e7843b30
+      spriteID: a5b0221fb6e8ef349ba12584c1a6e72f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TheBar_1
+      name: HospitalBase_1
       rect:
         serializedVersion: 2
         x: 160
@@ -125,13 +128,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27c2c4eb42c857840b009dab7a9647e5
+      spriteID: 661ff115a9af95a498811f2b80a67a43
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TheBar_2
+      name: HospitalBase_2
       rect:
         serializedVersion: 2
         x: 320
@@ -145,13 +148,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4857da582905a74d98b10c502e49721
+      spriteID: e2b939e277b591a4eaab3fdc342452d2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TheBar_3
+      name: HospitalBase_3
       rect:
         serializedVersion: 2
         x: 480
@@ -165,13 +168,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ee7eebc9a867f342b12f3230f18d034
+      spriteID: efe28ced88a001343ac8f076df7ecd58
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TheBar_4
+      name: HospitalBase_4
       rect:
         serializedVersion: 2
         x: 640
@@ -185,13 +188,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f08f2898ba739b4bacdda8ea330dffb
+      spriteID: 485760bc3fd7ca24cadc965807a5f270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TheBar_5
+      name: HospitalBase_5
       rect:
         serializedVersion: 2
         x: 800
@@ -205,13 +208,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a157ae211028754bb28c5003c888361
+      spriteID: b98f1584315d659408000f2dcbaf8956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TheBar_6
+      name: HospitalBase_6
       rect:
         serializedVersion: 2
         x: 960
@@ -225,7 +228,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b15c2c00315fd1a41b2ef9ec843e6148
+      spriteID: 119ca3a8bcd882d419a7b25ffd28e614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HospitalBase_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f74559764a76b0419fde06829135424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HospitalBase_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 160
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f9f783e56a8fd41a3ff82a419daf88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HospitalBase_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 160
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01324c56b299e6240ab0b2d97d82ae9f
       vertices: []
       indices: 
       edges: []
@@ -233,7 +296,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fe1e9cf350830df4eade07430c73e20e
+    spriteID: 06f123a9138c791499f234960748e279
     vertices: []
     indices: 
     edges: []

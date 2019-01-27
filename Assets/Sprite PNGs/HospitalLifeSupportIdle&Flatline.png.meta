@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 87257ae80340e5b4e8594c7db0a726d1
+guid: bcf5fafc40a5d904c8e8a585486153d5
 TextureImporter:
   fileIDToRecycleName:
-    21300000: TheBar_0
-    21300002: TheBar_1
-    21300004: TheBar_2
-    21300006: TheBar_3
-    21300008: TheBar_4
-    21300010: TheBar_5
-    21300012: TheBar_6
+    21300000: HospitalLifeSupportIdle&Flatline_0
+    21300002: HospitalLifeSupportIdle&Flatline_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -91,7 +86,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TheBar_0
+      name: HospitalLifeSupportIdle&Flatline_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,13 +100,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 037cded80dc29db4d90db6c5e7843b30
+      spriteID: 5ebe927c2edd78143adc7008c05679ff
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TheBar_1
+      name: HospitalLifeSupportIdle&Flatline_1
       rect:
         serializedVersion: 2
         x: 160
@@ -125,107 +120,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27c2c4eb42c857840b009dab7a9647e5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TheBar_2
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 160
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4857da582905a74d98b10c502e49721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TheBar_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 160
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ee7eebc9a867f342b12f3230f18d034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TheBar_4
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 160
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f08f2898ba739b4bacdda8ea330dffb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TheBar_5
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 160
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a157ae211028754bb28c5003c888361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TheBar_6
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 160
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b15c2c00315fd1a41b2ef9ec843e6148
+      spriteID: f82a03a29f1fc6d499b9fb387f3c5f30
       vertices: []
       indices: 
       edges: []
@@ -233,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fe1e9cf350830df4eade07430c73e20e
+    spriteID: 30e9d49a94562d14791e5f92055e1937
     vertices: []
     indices: 
     edges: []
