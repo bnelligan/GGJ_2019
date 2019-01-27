@@ -463,7 +463,10 @@ MonoBehaviour:
   EventDescription: 
   AutoTriggerEvent: 0
   ActivateKey: 101
-  poop: {fileID: 3842337082671237235, guid: 3554f8fdb2c3f3d4fb403a369c42402e, type: 3}
+  Loot:
+  - {fileID: 3842337082671237235, guid: 3554f8fdb2c3f3d4fb403a369c42402e, type: 3}
+  - {fileID: 21506412, guid: b31980a7f9e971842b9ffa4c1e292b83, type: 3}
+  - {fileID: 8422154885023031063, guid: dbee349a5bcfbad4f8cfff47da9a50cf, type: 3}
 --- !u!1001 &2067350247
 PrefabInstance:
   m_ObjectHideFlags: 0
