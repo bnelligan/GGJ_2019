@@ -50,24 +50,32 @@ public class GirlEvent : LifeEvent
         if(CanTriggerEvent() && HasRequiredStats())
         {
             FollowPlayer();
+            stats.IncreaseStat(PrimaryStat);
             base.TriggerEvent();
         }
-        else
-        {
-            if(stats.transform.position.x < transform.position.x)
-            {
-                GetComponent<SpriteRenderer>().flipX = true;
-            }
-            else if (stats.transform.position.x > transform.position.x)
-            {
-                GetComponent<SpriteRenderer>().flipX = false;
-            }
-        }
+        
     }
     public override bool CanTriggerEvent()
     {
         bool canTrigger = base.CanTriggerEvent();
-        
+        if(canTrigger)
+        {
+            if(HasRequiredStats())
+            {
+                canTrigger = true;
+            }
+            else
+            {
+                if (stats.transform.position.x < transform.position.x)
+                {
+                    GetComponent<SpriteRenderer>().flipX = true;
+                }
+                else if (stats.transform.position.x > transform.position.x)
+                {
+                    GetComponent<SpriteRenderer>().flipX = false;
+                }
+            }
+        }
         return canTrigger;
     }
     public void FollowPlayer()
