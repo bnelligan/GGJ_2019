@@ -2,24 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class StartByBed : MonoBehaviour
 {
-
-    public Transform stairsDown;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        
+      
+        player.transform.position = new Vector3(.808f,.0275f,0);
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        other.transform.position = stairsDown.position;
     }
 }
