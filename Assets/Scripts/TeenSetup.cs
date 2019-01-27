@@ -21,7 +21,6 @@ public class TeenSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
         player.GetComponent<Animator>().runtimeAnimatorController = teenAnim;
         playerSprite = player.GetComponentInChildren<SpriteRenderer>();
         playerSprite.sprite = teenSprite;

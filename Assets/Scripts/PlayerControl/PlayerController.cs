@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     public float speed;
 
-    public SpriteRenderer fatherSprite;
+    public SpriteRenderer sprite;
 
     private bool moving;
 
@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -44,9 +45,11 @@ public class PlayerController : MonoBehaviour
         {
             moving = true;
             anim.SetBool("Moving", moving);
-            if (!fatherSprite.flipX)
+            //anim.SetBool("Flip", true);
+
+            if (!sprite.flipX)
             {
-                fatherSprite.flipX = true;
+                sprite.flipX = true;
             }
            // transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
            body.MovePosition(new Vector2((transform.position.x+moveVector.x*speed*Time.deltaTime),transform.position.y));
@@ -55,9 +58,11 @@ public class PlayerController : MonoBehaviour
         {
             moving = true;
             anim.SetBool("Moving", moving);
-            if (fatherSprite.flipX)
+            //anim.SetBool("Flip", false);
+
+            if (sprite.flipX)
             {
-                fatherSprite.flipX = false;
+                sprite.flipX = false;
             }
             body.MovePosition(new Vector2((transform.position.x+moveVector.x*speed*Time.deltaTime),transform.position.y));        }
         else

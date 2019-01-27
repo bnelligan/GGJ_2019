@@ -6,6 +6,8 @@ public class StairsDownEvent : LifeEvent
 {
     public GameObject player;
     public GameObject downStairs;
+    float floorHeight = 0.39f;
+
     private void Awake()
     {
         EventName = "Go Down Stairs";
@@ -18,7 +20,7 @@ public class StairsDownEvent : LifeEvent
         if(CanTriggerEvent())
         {
             Debug.Log("Go Down Stairs");
-            player.transform.position = downStairs.transform.position;
+            player.transform.position -= new Vector3(0, floorHeight, 0);
             base.TriggerEvent();
             IsTriggered = false;
         }

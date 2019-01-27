@@ -10,13 +10,15 @@ public class StartByBed : MonoBehaviour
 
     public GameObject alarmAnim;
 
+    public Vector3 startOffset = Vector3.zero;
+
     public Sprite alarmIdle;
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerStats>().gameObject;
         player.SetActive(false);
-        player.transform.position = transform.position;
+        player.transform.position = transform.position + startOffset;
         StartCoroutine("WakeyWakey");
     }
 

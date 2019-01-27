@@ -66,11 +66,11 @@ public class GirlEvent : LifeEvent
             }
             else
             {
-                if (stats.transform.position.x < transform.position.x)
+                if (stats?.transform.position.x < transform.position.x)
                 {
                     GetComponent<SpriteRenderer>().flipX = true;
                 }
-                else if (stats.transform.position.x > transform.position.x)
+                else if (stats?.transform.position.x > transform.position.x)
                 {
                     GetComponent<SpriteRenderer>().flipX = false;
                 }
@@ -85,7 +85,14 @@ public class GirlEvent : LifeEvent
     }
     public bool HasRequiredStats()
     {
-        return stats.Romance >= 3 && stats.Wellness >= 3 && stats.Wealth >= 2 && stats.Intelligence >= 2;
+        if(stats)
+        {
+            return stats.Romance >= 3 && stats.Wellness >= 3 && stats.Wealth >= 2 && stats.Intelligence >= 2;
+        }
+        else
+        {
+            return false;
+        }
     }
     
 }
