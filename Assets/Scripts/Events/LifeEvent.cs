@@ -24,7 +24,7 @@ public abstract class LifeEvent : MonoBehaviour
         IsTriggered = false;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (Input.GetKeyDown(ActivateKey) && IsPromptVisible)
         {
@@ -65,8 +65,8 @@ public abstract class LifeEvent : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("TRIGGERED");
-        stats = collision.GetComponent<PlayerStats>();
-        if(stats && CanTriggerEvent())
+        PlayerStats colliderStats = collision.GetComponent<PlayerStats>();
+        if (colliderStats && CanTriggerEvent())
         {
             // Show popup to activate the event
             if(AutoTriggerEvent)
@@ -81,8 +81,8 @@ public abstract class LifeEvent : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        stats = collision.GetComponent<PlayerStats>();
-        if(stats && IsPromptVisible)
+        PlayerStats colliderStats = collision.GetComponent<PlayerStats>();
+        if(colliderStats && IsPromptVisible)
         {
             HidePrompt();
         }
