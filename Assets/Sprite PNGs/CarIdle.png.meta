@@ -1,15 +1,13 @@
 fileFormatVersion: 2
-guid: 374c442434f21ed458758dcb2fcf959f
+guid: fcedd88deeefbcb489087b73028cca27
 TextureImporter:
   fileIDToRecycleName:
-    21300000: FatherIdle_0
-    21300002: FatherIdle_1
-    21300004: FatherIdle_2
-    21300006: FatherIdle_3
-    21300008: FatherIdle_4
-    21300010: FatherIdle_5
-    21300012: FatherIdle_6
-    21300014: FatherIdle_7
+    21300000: CarIdle_0
+    21300002: CarIdle_2
+    21300004: CarIdle_1
+    21300006: CarIdle_3
+    21300008: CarIdle_4
+    21300010: CarIdle_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -103,13 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FatherIdle_0
+      name: CarIdle_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 4
-        width: 7
-        height: 28
+        x: 22
+        y: 7
+        width: 56
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,19 +115,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 177174f9293d5df4aadca76d3fc67186
+      spriteID: 5ce915db15527884f9ff55854c8f5d5f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FatherIdle_1
+      name: CarIdle_2
       rect:
         serializedVersion: 2
-        x: 45
-        y: 4
-        width: 7
-        height: 28
+        x: 182
+        y: 7
+        width: 56
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,19 +135,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ecd4ec5d7a0b9446b68ba2d8ec81fdc
+      spriteID: 37ba09730b4030144b2a925a2fc0cae5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FatherIdle_2
+      name: CarIdle_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 4
-        width: 7
-        height: 28
+        x: 342
+        y: 7
+        width: 56
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,19 +155,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 126de16b8b9dabe47871765d870a05f6
+      spriteID: f7d964b2ab4947449a95ac341b8926c5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FatherIdle_3
+      name: CarIdle_3
       rect:
         serializedVersion: 2
-        x: 109
-        y: 4
-        width: 7
-        height: 28
+        x: 502
+        y: 7
+        width: 56
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,19 +175,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 347c9e00e23a0ae41964ed14bedfa2d7
+      spriteID: 5605fcbf0ab8d394aa6884acf1f36258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FatherIdle_4
+      name: CarIdle_4
       rect:
         serializedVersion: 2
-        x: 141
-        y: 4
-        width: 7
-        height: 28
+        x: 662
+        y: 7
+        width: 56
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,19 +195,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ec29b88ede6f984688b27de70aca0de
+      spriteID: 9d05f49131204d7438f47f39ae596904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FatherIdle_5
+      name: CarIdle_5
       rect:
         serializedVersion: 2
-        x: 173
-        y: 4
-        width: 7
-        height: 27
+        x: 822
+        y: 7
+        width: 56
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,47 +215,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b68227f20de7fea418913e1eab241e68
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FatherIdle_6
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 4
-        width: 7
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 090e0340421769848bee32047e5b2188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FatherIdle_7
-      rect:
-        serializedVersion: 2
-        x: 237
-        y: 4
-        width: 7
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c16a08dc4f611794eaa8157f54779ea8
+      spriteID: 750ba172c1147e44da6878eb9fcdaa0d
       vertices: []
       indices: 
       edges: []
@@ -265,7 +223,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7b6712b73b2597b45ac40286ad6e7e0e
+    spriteID: 1723601337b3e2f47995d243da320f5d
     vertices: []
     indices: 
     edges: []
