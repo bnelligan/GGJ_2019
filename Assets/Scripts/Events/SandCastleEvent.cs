@@ -5,7 +5,7 @@ using UnityEngine;
 public class SandCastleEvent : LifeEvent
 {
 
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Sand Castle";
         EventDescription = "Building sand castles is fun! It will make you happy.";

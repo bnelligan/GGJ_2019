@@ -89,10 +89,10 @@ TextureImporter:
       name: OfficePressE_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 29
-        width: 9
-        height: 11
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -100,7 +100,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f7e328d8cb52864d9c62c0ba28082c3
+      spriteID: a6cb8c250c5340b458d34a192aa4bf5d
       vertices: []
       indices: 
       edges: []
@@ -109,10 +109,10 @@ TextureImporter:
       name: OfficePressE_1
       rect:
         serializedVersion: 2
-        x: 213
-        y: 29
-        width: 9
-        height: 11
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,7 +120,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 158d912ae4d488247a605a079ecd82bc
+      spriteID: 2d5a4ffbe32c8e640afe82e8014709a8
       vertices: []
       indices: 
       edges: []

@@ -14,14 +14,16 @@ public abstract class LifeEvent : MonoBehaviour
     public bool AutoTriggerEvent = false;
     GameObject prompt;
     public KeyCode ActivateKey = KeyCode.E;
-
-    private void Start()
+    protected virtual void Awake()
     {
-        stats = FindObjectOfType<PlayerStats>();
         prompt = Resources.Load("Prefabs/Prompt") as GameObject;
         prompt = Instantiate(prompt, transform);
         prompt.SetActive(false);
         IsTriggered = false;
+    }
+    protected virtual void Start()
+    {
+        stats = FindObjectOfType<PlayerStats>();
     }
 
     protected virtual void Update()
@@ -79,7 +81,14 @@ public abstract class LifeEvent : MonoBehaviour
             }
             else
             {
-                ShowPrompt();
+                if(prompt)
+                {
+                    ShowPrompt();
+                }
+                else
+                {
+                    Debug.LogWarning("Error showing prompt. Null reference");
+                }
             }
         }
     }

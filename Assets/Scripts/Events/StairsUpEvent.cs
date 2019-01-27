@@ -8,11 +8,12 @@ public class StairsUpEvent : LifeEvent
     public GameObject upStairs;
     float floorHeight = 0.39f;
 
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Go Up Stairs";
         EventDescription = "Walk up stairs bruh";
         player = FindObjectOfType<PlayerStats>().gameObject;
+        base.Awake();
     }
 
     public override void TriggerEvent()

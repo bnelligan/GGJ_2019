@@ -6,11 +6,12 @@ public class GoToWorkEvent : LifeEvent
 {
     private LevelChanger levelChanger;
     public Animator carAnim;
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Work";
         EventDescription = "The bills won't pay themselves...";
         levelChanger = FindObjectOfType<LevelChanger>();
+        base.Awake();
     }
     public override void TriggerEvent()
     {

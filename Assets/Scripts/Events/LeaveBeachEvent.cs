@@ -5,7 +5,7 @@ using UnityEngine;
 public class LeaveBeachEvent : LifeEvent
 {
     public LevelChanger levelChanger;
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Leave Beach" +
                     "";

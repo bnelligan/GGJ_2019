@@ -6,12 +6,13 @@ public class NiceClothesEvent : LifeEvent
 {
     SpriteRenderer sprite;
 
-    private void Awake()
+    protected override  void Awake()
     {
         EventName = "Nice Clothes";
         EventDescription = "Wear nice clothes to work";
         PrimaryStat = LifeStat.WEALTH;
         sprite = GetComponent<SpriteRenderer>();
+        base.Awake();
     }
 
     public override void TriggerEvent()

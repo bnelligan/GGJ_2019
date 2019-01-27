@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoffeeEvent : LifeEvent
 {
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Coffee!";
         EventDescription = "Nothin' like a cup-o-joe in the mornin'";

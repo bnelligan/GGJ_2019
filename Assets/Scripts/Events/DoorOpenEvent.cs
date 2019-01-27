@@ -6,7 +6,7 @@ public class DoorOpenEvent : LifeEvent
 {
     public GameObject door;
     public GameObject wall;
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Open door";
         EventDescription = "Open door bruh";

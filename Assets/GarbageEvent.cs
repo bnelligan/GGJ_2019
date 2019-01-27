@@ -7,7 +7,7 @@ public class GarbageEvent : LifeEvent
     [SerializeField]
     List<GameObject> Loot;
 
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Garbage Diver";
         EventDescription = "Ewww....";

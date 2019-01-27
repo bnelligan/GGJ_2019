@@ -44,6 +44,7 @@ public class LifeStage : MonoBehaviour
         {
             Instantiate(player.girlPrefab, transform.position, transform.rotation);
         }
+        
     }
 
     private void SpawnEvents()
