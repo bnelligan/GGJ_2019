@@ -31,14 +31,7 @@ public class LifeStage : MonoBehaviour
         {
             Debug.LogError("Player not found!!");
         }
-        if(UseCustomScale)
-        {
-            player.transform.localScale = playerScale;
-        }
-        else
-        {
-            player.transform.localScale = Vector3.one;
-        }
+        
     }
     private void Start()
     {
@@ -48,7 +41,14 @@ public class LifeStage : MonoBehaviour
         {
             Instantiate(player.girlPrefab, transform.position, transform.rotation);
         }
-        
+        if (UseCustomScale)
+        {
+            player.transform.localScale = playerScale;
+        }
+        else
+        {
+            player.transform.localScale = Vector3.one;
+        }
     }
 
     private void SpawnEvents()
