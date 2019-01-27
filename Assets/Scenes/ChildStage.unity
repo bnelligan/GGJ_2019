@@ -179,11 +179,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2023014397456411791, guid: 789f922b302ed764db97248a408864d9,
-        type: 3}
-      propertyPath: m_TagString
-      value: ROMANCE
-      objectReference: {fileID: 0}
     - target: {fileID: 2023014396776262878, guid: 789f922b302ed764db97248a408864d9,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -193,11 +188,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2023014398168347306, guid: 789f922b302ed764db97248a408864d9,
-        type: 3}
-      propertyPath: m_TagString
-      value: WEALTH
       objectReference: {fileID: 0}
     - target: {fileID: 2023014397470202969, guid: 789f922b302ed764db97248a408864d9,
         type: 3}
@@ -209,11 +199,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2023014397255175856, guid: 789f922b302ed764db97248a408864d9,
-        type: 3}
-      propertyPath: m_TagString
-      value: WELLNESS
-      objectReference: {fileID: 0}
     - target: {fileID: 2023014397125209177, guid: 789f922b302ed764db97248a408864d9,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -223,11 +208,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2023014396363387900, guid: 789f922b302ed764db97248a408864d9,
-        type: 3}
-      propertyPath: m_TagString
-      value: INTELLIGENCE
       objectReference: {fileID: 0}
     - target: {fileID: 2023014396826919202, guid: 789f922b302ed764db97248a408864d9,
         type: 3}
@@ -596,26 +576,3 @@ MonoBehaviour:
   m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2023014398379178335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2023014398379178335, guid: 789f922b302ed764db97248a408864d9,
-    type: 3}
-  m_PrefabInstance: {fileID: 512016913}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2023014398379178336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023014398379178335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09d06e123ec254e429be76ad3501e9d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  screenPos: {x: 0, y: 0}
-  player: {fileID: 0}
-  speed: 1.5
-  movingRight: 0
-  movingLeft: 0

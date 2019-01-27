@@ -17,18 +17,19 @@ public class CameraMovement : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerStats>().gameObject;
+        transform.position = new Vector3(player.transform.position.x, transform.position.y,transform.position.z);
     }
 
     // Update is called once per frame
     void Update()
     {
-        screenPos = Camera.main.WorldToScreenPoint(player.transform.position);
+        screenPos = Camera.main.WorldToViewportPoint(player.transform.position);
 
-        if (screenPos.x < 30)
+        if (screenPos.x < .1f)
         {
             movingLeft = true;
         }
-        else if(screenPos.x > 450)
+        else if(screenPos.x > .9f)
         {
             movingRight = true;
         }
