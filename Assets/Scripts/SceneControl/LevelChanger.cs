@@ -42,4 +42,8 @@ public class LevelChanger : MonoBehaviour
     {
         SceneManager.LoadScene(levelToLoad);
     }
+    public void FadeOut()
+    {
+        animator.SetTrigger("FadeOut");
+    }
 }
