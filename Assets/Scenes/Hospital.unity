@@ -184,7 +184,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1405125411
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bf29de5b90ddf164db471034b9a5771b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -211,6 +211,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &668573188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1569841465, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.808
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.029
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709871857478845992, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6c96dfb07f1cc74bbd67cc09df9f9fb, type: 3}
 --- !u!1 &745940291
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +291,7 @@ GameObject:
   - component: {fileID: 745940292}
   m_Layer: 0
   m_Name: HospitalVisitor2
-  m_TagString: Untagged
+  m_TagString: HospitalWitness
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +331,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1405125411
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1e50a16ec56afd54bb0ee34e7a63b47a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -303,7 +371,7 @@ GameObject:
   - component: {fileID: 885057075}
   m_Layer: 0
   m_Name: HospitalVisitor3
-  m_TagString: Untagged
+  m_TagString: HospitalWitness
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -316,7 +384,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885057074}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ca3950c3120fd7d47aec8d8bbaf4d27f, type: 2}
   m_CullingMode: 0
@@ -362,7 +430,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1405125411
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 01743de2c39e969469e185393e244b49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -401,7 +469,7 @@ GameObject:
   - component: {fileID: 1020880279}
   m_Layer: 0
   m_Name: HospitalVisitor1
-  m_TagString: Untagged
+  m_TagString: HospitalWitness
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -441,7 +509,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1405125411
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ac1e5f2dfaa01eb498aa177c0587179a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -540,7 +608,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1405125411
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bcf5fafc40a5d904c8e8a585486153d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -578,6 +646,7 @@ GameObject:
   - component: {fileID: 1371546803}
   - component: {fileID: 1371546802}
   - component: {fileID: 1371546801}
+  - component: {fileID: 1371546804}
   m_Layer: 0
   m_Name: HospitalDivineIntervention_0
   m_TagString: Untagged
@@ -593,7 +662,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371546800}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e24a7407cb73e89499c2a8396f80e3cd, type: 2}
   m_CullingMode: 0
@@ -639,7 +708,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1405125411
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: e4166edc2ff81a34b97fb7a44058bc9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -666,6 +735,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1371546804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371546800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe4a949c2b9f4847899d3c4da91e939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventName: 
+  EventDescription: 
+  AutoTriggerEvent: 0
+  ActivateKey: 101
 --- !u!1001 &1749263670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -733,12 +818,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2023014397470202969, guid: 789f922b302ed764db97248a408864d9,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2023014396554339275, guid: 789f922b302ed764db97248a408864d9,
+    - target: {fileID: 2023014396776262878, guid: 789f922b302ed764db97248a408864d9,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -748,7 +828,7 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2023014397125209177, guid: 789f922b302ed764db97248a408864d9,
+    - target: {fileID: 2023014397470202969, guid: 789f922b302ed764db97248a408864d9,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -758,7 +838,7 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2023014396776262878, guid: 789f922b302ed764db97248a408864d9,
+    - target: {fileID: 2023014397125209177, guid: 789f922b302ed764db97248a408864d9,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -773,5 +853,57 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2023014396554339275, guid: 789f922b302ed764db97248a408864d9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 789f922b302ed764db97248a408864d9, type: 3}
+--- !u!1 &1942821586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1942821587}
+  - component: {fileID: 1942821588}
+  m_Layer: 0
+  m_Name: HostpitalEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1942821587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942821586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.39699602, y: -0.08174369, z: -0.1858068}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1942821588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942821586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a30b587611bf814f9ad874f5dcafc2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventName: 
+  EventDescription: 
+  AutoTriggerEvent: 0
+  ActivateKey: 101

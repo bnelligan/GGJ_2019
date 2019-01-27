@@ -8,6 +8,7 @@ TagManager:
   - WEALTH
   - WELLNESS
   - INTELLIGENCE
+  - HospitalWitness
   layers:
   - Default
   - TransparentFX

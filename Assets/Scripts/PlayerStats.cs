@@ -83,5 +83,10 @@ public class PlayerStats : MonoBehaviour
             Debug.Log($"{stat.ToString()} stat decreased to {statLookup[stat]}");
         }
     }
-    
+
+    public int CalcTotalScore()
+    {
+        return Romance + Wealth + Intelligence + Wellness;
+    }
+
 }

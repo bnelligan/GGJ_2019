@@ -13,6 +13,7 @@ public class Office : LifeEvent
     {
         stats = FindObjectOfType<PlayerStats>();
         levelChanger = FindObjectOfType<LevelChanger>();
+        stats.transform.position += new Vector3(0, -50, 0);
         base.Start();
     }
     protected override void Update()
