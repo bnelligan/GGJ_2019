@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DDOL : MonoBehaviour
+public class DDOLPlayer : MonoBehaviour
 {
-    public static DDOL Instance;
+    public static DDOLPlayer Instance;
 
     void Awake()
     {

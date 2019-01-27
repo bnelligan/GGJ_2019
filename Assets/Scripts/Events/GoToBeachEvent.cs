@@ -22,7 +22,7 @@ public class GoToBeachEvent : LifeEvent
         if (CanTriggerEvent())
         {
             Debug.Log("Go To Beach");
-            
+            StartCoroutine("DriveAway");
             base.TriggerEvent();
         }
         else
@@ -36,7 +36,10 @@ public class GoToBeachEvent : LifeEvent
         player.SetActive(false);
         mom.SetActive(false);
         dad.SetActive(false);
-        yield return new WaitForSeconds(4f);
+        carAnim.SetBool("ToBeach",true);
+        yield return new WaitForSeconds(2f);
         levelChanger.FadeToNextLevel();
+        yield return new WaitForSeconds(.75f);
+        player.SetActive(true);
     }
 }
