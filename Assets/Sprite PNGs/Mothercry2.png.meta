@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: b09b19e2c29ae3243a8398aa2fbbe6d8
+guid: 33e1ec64bf51c7d4088074f9afe84e14
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Mothercry2_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -93,11 +94,31 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mothercry2_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 5
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f28499fd4266fa41a14be8ac7661c82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b21c2778eeaaf354f90e960160be0542
+    spriteID: 1c17c6bac08ef1c478e2e917353fde9e
     vertices: []
     indices: 
     edges: []

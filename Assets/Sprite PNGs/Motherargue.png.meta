@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: b09b19e2c29ae3243a8398aa2fbbe6d8
+guid: 994f6967b3662cf41862f9e114abb34e
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Motherargue_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -93,11 +94,31 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Motherargue_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 5
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579c3257e3dd0934fb97054dd2e1b5aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b21c2778eeaaf354f90e960160be0542
+    spriteID: 0cd0ab2583e76c7438ed6229b15034c5
     vertices: []
     indices: 
     edges: []
