@@ -82,6 +82,7 @@ public class GirlEvent : LifeEvent
     public void FollowPlayer()
     {
         isFollowing = true;
+        stats.HasGirlfriend = true;
         Debug.Log("Following player!");
     }
     public bool HasRequiredStats()

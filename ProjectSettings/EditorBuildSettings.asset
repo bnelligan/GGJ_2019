@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Bar.unity
     guid: c73002318cc5ae04f862b2a71825a24b
+  - enabled: 1
+    path: Assets/Scenes/Hospital.unity
+    guid: e6a20820c2e6171498b4cc58777f0e96
   m_configObjects: {}

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class HospitalEvent : LifeEvent
 {
-    protected override void Awake()
-    {
-        base.Awake();
-    }
+    [SerializeField]
+    GameObject DivineIntervention;
+    [SerializeField]
+    GameObject LifeSupport;
+
     protected override void Start()
     {
         base.Start();
@@ -30,12 +31,21 @@ public class HospitalEvent : LifeEvent
                 fCount--;
             }
         }
-
+        TriggerEvent();
     }
     public override void TriggerEvent()
     {
-
+        StartCoroutine(Die());
         base.TriggerEvent();
+    }
+    IEnumerator Die()
+    {
+        GetComponent<Animator>().enabled = true;
+        yield return new WaitForSeconds(10);
+        DivineIntervention.GetComponent<Animator>().enabled = true;
+        LifeSupport.GetComponent<Animator>().SetTrigger("Dead");
+        yield return new WaitForSeconds(10);
+        FindObjectOfType<LevelChanger>().FadeOut();
     }
     
 }
