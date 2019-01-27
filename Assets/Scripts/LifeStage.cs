@@ -10,8 +10,8 @@ public class LifeStage : MonoBehaviour
 
     [SerializeField]
     Age playerAge;
-    [SerializeField]
-    int eventCount = 3;
+    //[SerializeField]
+    int eventCount = 20;
 
     PlayerStats player;
 
@@ -19,11 +19,21 @@ public class LifeStage : MonoBehaviour
     {
         player = FindObjectOfType<PlayerStats>();
         LifeEvents = FindObjectsOfType<LifeEvent>();
-        player.PlayerAge = playerAge;
+        if(player)
+        {
+            player.PlayerAge = playerAge;
+
+        }
+        else
+        {
+            Debug.LogError("Player not found!!");
+        }
+       
     }
     private void Start()
     {
-        SpawnEvents();
+        //SpawnEvents();
+        SetPlayerAnimatorController();
     }
 
     private void SpawnEvents()
@@ -41,5 +51,27 @@ public class LifeStage : MonoBehaviour
         eventsToDisable.ForEach(e => e.gameObject.SetActive(false));
     }
 
-    
+    private void SetPlayerAnimatorController()
+    {
+        string animName = "Child";
+
+        if(player.PlayerAge == Age.CHILD)
+        {
+            animName = "Child";
+        }
+        else if(player.PlayerAge == Age.TEEN)
+        {
+            animName = "Teen";
+        }
+        else if(player.PlayerAge == Age.ADULT)
+        {
+            animName = "Adult";
+        }
+        else if(player.PlayerAge == Age.ELDERLY)
+        {
+            animName = "Elderly";
+        }
+        RuntimeAnimatorController rtAnimator = Resources.Load($"Animators/{animName}") as RuntimeAnimatorController;
+        player.GetComponent<Animator>().runtimeAnimatorController = rtAnimator;
+    }
 }
