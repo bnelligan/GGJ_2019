@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 383259063}
   - component: {fileID: 383259068}
   - component: {fileID: 383259067}
+  - component: {fileID: 1569841472}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -131,6 +132,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreSlider: {fileID: 0}
   PlayerAge: 0
+--- !u!114 &1569841472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569841465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287c637eb3a739c4aa0f86594f2eca38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5709871857359036798
 GameObject:
   m_ObjectHideFlags: 0

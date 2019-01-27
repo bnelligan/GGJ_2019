@@ -23,10 +23,10 @@ public class PlayerStats : MonoBehaviour
     public const int MAX_STAT_LEVEL = 5;
     Dictionary<LifeStat, int> statLookup = new Dictionary<LifeStat, int>
     {
-        [LifeStat.ROMANCE] = 3,
-        [LifeStat.WEALTH] = 3,
-        [LifeStat.WELLNESS] = 3,
-        [LifeStat.INTELLIGENCE] = 3
+        [LifeStat.ROMANCE] = 2,
+        [LifeStat.WEALTH] = 2,
+        [LifeStat.WELLNESS] = 2,
+        [LifeStat.INTELLIGENCE] = 2
     };
 
     public Slider scoreSlider;
