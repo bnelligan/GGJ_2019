@@ -5,13 +5,17 @@ using UnityEngine;
 public class GarbageEvent : LifeEvent
 {
     [SerializeField]
-    GameObject poop;
+    List<GameObject> Loot;
 
     private void Awake()
     {
         EventName = "Garbage Diver";
         EventDescription = "Ewww....";
         PrimaryStat = LifeStat.WELLNESS;
+        if(Loot == null)
+        {
+            Loot = new List<GameObject>();
+        }
     }
 
     public override void TriggerEvent()
@@ -19,8 +23,12 @@ public class GarbageEvent : LifeEvent
         if(CanTriggerEvent())
         {
             stats.DecreaseStat(LifeStat.WELLNESS);
-            Instantiate(poop, stats.transform);
+            Instantiate(RandomLoot(), stats.transform);
         }
         base.TriggerEvent();
+    }
+    private GameObject RandomLoot()
+    {
+        return Loot[Random.Range(0, Loot.Count)];
     }
 }
