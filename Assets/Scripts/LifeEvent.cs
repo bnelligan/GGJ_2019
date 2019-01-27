@@ -9,7 +9,7 @@ public abstract class LifeEvent : MonoBehaviour
     public string EventDescription;
     public LifeStat PrimaryStat { get; protected set; }
     protected PlayerStats stats;
-    public bool IsTriggered { get; private set; }
+    public bool IsTriggered { get; set; }
     public bool IsPromptVisible { get { return prompt.activeInHierarchy; } }
     public bool AutoTriggerEvent = false;
     GameObject prompt;

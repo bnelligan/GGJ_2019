@@ -25,9 +25,9 @@ public class PlayerController : MonoBehaviour
         {
             moving = true;
             anim.SetBool("Moving", moving);
-            if (fatherSprite.flipX)
+            if (!fatherSprite.flipX)
             {
-                fatherSprite.flipX = false;
+                fatherSprite.flipX = true;
             }
             transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
         }
@@ -35,9 +35,9 @@ public class PlayerController : MonoBehaviour
         {
             moving = true;
             anim.SetBool("Moving", moving);
-            if (!fatherSprite.flipX)
+            if (fatherSprite.flipX)
             {
-                fatherSprite.flipX = true;
+                fatherSprite.flipX = false;
             }
             transform.Translate(-Vector3.right * speed * Time.deltaTime, Space.World);
         }
