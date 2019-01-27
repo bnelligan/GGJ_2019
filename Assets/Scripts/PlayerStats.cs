@@ -35,10 +35,16 @@ public class PlayerStats : MonoBehaviour
     public int Wellness { get { return statLookup[LifeStat.WELLNESS]; } }
     public int Intelligence { get { return statLookup[LifeStat.INTELLIGENCE]; } }
     public Age PlayerAge;
+    public bool HasGirlfriend = false;
+    public GameObject girlPrefab;
 
     private void Awake()
     {
         SetInitialStats();
+    }
+    private void Start()
+    {
+        
     }
     private void SetInitialStats()
     {

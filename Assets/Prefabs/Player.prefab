@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  fatherSprite: {fileID: 0}
+  sprite: {fileID: 0}
   anim: {fileID: 5709871857478845994}
 --- !u!95 &5709871857478845994
 Animator:
@@ -132,6 +132,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreSlider: {fileID: 0}
   PlayerAge: 0
+  HasGirlfriend: 0
+  girlPrefab: {fileID: 6192206445270564173, guid: 7e49e8101ba61f44b8a303dc2683d6cf,
+    type: 3}
 --- !u!114 &1569841472
 MonoBehaviour:
   m_ObjectHideFlags: 0

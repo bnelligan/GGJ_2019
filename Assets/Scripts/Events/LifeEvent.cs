@@ -66,6 +66,10 @@ public abstract class LifeEvent : MonoBehaviour
     {
         Debug.Log("TRIGGERED");
         PlayerStats colliderStats = collision.GetComponent<PlayerStats>();
+        if(stats == null && colliderStats != null)
+        {
+            stats = colliderStats;
+        }
         if (colliderStats && CanTriggerEvent())
         {
             // Show popup to activate the event
@@ -82,7 +86,11 @@ public abstract class LifeEvent : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         PlayerStats colliderStats = collision.GetComponent<PlayerStats>();
-        if(colliderStats && IsPromptVisible)
+        if (stats == null && colliderStats != null)
+        {
+            stats = colliderStats;
+        }
+        if (colliderStats && IsPromptVisible)
         {
             HidePrompt();
         }
