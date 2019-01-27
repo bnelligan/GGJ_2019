@@ -8,7 +8,7 @@ public class SmokerEvent : LifeEvent
     {
         EventName = "Smoker";
         EventDescription = "Smoking is bad for you... But girls might think you're cool?";
-        PrimaryStat = LifeStat.INTELLIGENCE;
+        PrimaryStat = LifeStat.ROMANCE;
     }
 
     public override void TriggerEvent()
