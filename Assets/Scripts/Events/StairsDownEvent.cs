@@ -2,17 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StairsDownEvent : MonoBehaviour
+public class StairsDownEvent : LifeEvent
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject player;
+    public GameObject downStairs;
+    private void Awake()
     {
-        
+        EventName = "Go Down Stairs";
+        EventDescription = "Walk down stairs bruh";
+        player = FindObjectOfType<PlayerStats>().gameObject;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void TriggerEvent()
     {
-        
+        if(CanTriggerEvent())
+        {
+            Debug.Log("Go Down Stairs");
+            player.transform.position = downStairs.transform.position;
+            base.TriggerEvent();
+            IsTriggered = false;
+        }
+        else
+        {
+            Debug.LogWarning($"Already triggered event {EventName}");
+        }
     }
+
 }
