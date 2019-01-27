@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,6 +21,18 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "School")
+        {
+            transform.localScale = new Vector3(1.4738f,1.4738f,1.4738f);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1,1,1);
+        }
     }
 
     // Update is called once per frame
