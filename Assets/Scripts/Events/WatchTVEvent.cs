@@ -39,6 +39,8 @@ public class WatchTVEvent : LifeEvent
     {
         yield return new WaitForSeconds(4f);
         levelChanger.FadeToNextLevel();
+        yield return new WaitForSeconds(.75f);
+        player.SetActive(true);
     }
 
 }

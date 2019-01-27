@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChildStageNight.unity
     guid: 087dd88404913e54284824ac8773bcdf
+  - enabled: 1
+    path: Assets/Scenes/TeenStage.unity
+    guid: d91e0e03b067b5b4a95de7d062ed831b
   m_configObjects: {}
