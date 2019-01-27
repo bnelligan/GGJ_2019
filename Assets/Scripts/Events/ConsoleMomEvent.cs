@@ -37,6 +37,8 @@ public class ConsoleMomEvent : LifeEvent
     {
         yield return new WaitForSeconds(2f);
         levelChanger.FadeToNextLevel();
+        yield return new WaitForSeconds(.7f);
+        player.GetComponent<PlayerController>().enabled = true;
     }
 
 }
