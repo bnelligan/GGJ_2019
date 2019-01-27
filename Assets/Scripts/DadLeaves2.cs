@@ -10,7 +10,7 @@ public class DadLeaves2 : MonoBehaviour
     public GameObject mom;
     void Start()
     {
-        
+        mom.GetComponent<Animator>().SetBool("arguing",true);
     }
 
     // Update is called once per frame
@@ -32,6 +32,7 @@ public class DadLeaves2 : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         dad.GetComponentInChildren<SpriteRenderer>().flipX = true;
         dad.GetComponent<Animator>().SetBool("dadLeave", true);
+        mom.GetComponent<Animator>().SetBool("arguing",false);
         mom.GetComponent<Animator>().SetBool("Idle",true);
         yield return new WaitForSeconds(1.5f);
         mom.GetComponentInChildren<SpriteRenderer>().flipX = false;
