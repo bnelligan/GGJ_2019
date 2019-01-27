@@ -12,15 +12,21 @@ public class PlayerController : MonoBehaviour
     private bool moving;
 
     public Animator anim;
+
+    private Rigidbody2D body;
+
+    private float xInput;
     // Start is called before the first frame update
     void Start()
     {
-        
+        body = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        xInput = Input.GetAxisRaw("Horizontal");
+        var moveVector = new Vector2(xInput,transform.position.y);
         if (Input.GetKey(KeyCode.RightArrow))
         {
             moving = true;
@@ -29,7 +35,8 @@ public class PlayerController : MonoBehaviour
             {
                 fatherSprite.flipX = true;
             }
-            transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
+           // transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
+           body.MovePosition(new Vector2((transform.position.x+moveVector.x*speed*Time.deltaTime),transform.position.y));
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -39,8 +46,7 @@ public class PlayerController : MonoBehaviour
             {
                 fatherSprite.flipX = false;
             }
-            transform.Translate(-Vector3.right * speed * Time.deltaTime, Space.World);
-        }
+            body.MovePosition(new Vector2((transform.position.x+moveVector.x*speed*Time.deltaTime),transform.position.y));        }
         else
         {
             moving = false;

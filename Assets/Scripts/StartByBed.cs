@@ -5,16 +5,36 @@ using UnityEngine;
 public class StartByBed : MonoBehaviour
 {
     public GameObject player;
+
+    public GameObject occupiedBed;
+
+    public GameObject alarmAnim;
+
+    public Sprite alarmIdle;
     // Start is called before the first frame update
     void Start()
     {
-      
-        player.transform.position = new Vector3(.808f,.0275f,0);
+        player = FindObjectOfType<PlayerStats>().gameObject;
+        player.SetActive(false);
+        player.transform.position = transform.position;
+        StartCoroutine("WakeyWakey");
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    IEnumerator WakeyWakey()
+    {
+        yield return new WaitForSeconds(2.5f);
+        alarmAnim.GetComponent<Animator>().enabled = true;
+        yield return new WaitForSeconds(4f);
+        alarmAnim.GetComponent<Animator>().enabled = false;
+        alarmAnim.GetComponentInChildren<SpriteRenderer>().sprite = alarmIdle;
+        yield return new WaitForSeconds(2f);
+        Destroy(occupiedBed);
+        player.SetActive(true);
     }
 }
