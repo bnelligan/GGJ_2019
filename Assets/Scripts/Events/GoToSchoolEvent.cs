@@ -7,7 +7,7 @@ public class GoToSchoolEvent : LifeEvent
     public Animator carAnim;
     public GameObject player;
     public LevelChanger levelChanger;
-    private void Awake()
+    protected override void Awake()
     {
         player = FindObjectOfType<PlayerStats>().gameObject;
         EventName = "schoool";

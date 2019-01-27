@@ -9,12 +9,13 @@ public class GoToBeachEvent : LifeEvent
     public GameObject dad;
     private LevelChanger levelChanger;
     public Animator carAnim;
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Go To Beach";
         EventDescription = "Go to beach bruh";
         player = FindObjectOfType<PlayerStats>().gameObject;
         levelChanger = FindObjectOfType<LevelChanger>();
+        base.Awake();
     }
 
     public override void TriggerEvent()

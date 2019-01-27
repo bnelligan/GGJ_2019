@@ -9,7 +9,7 @@ public class GirlEvent : LifeEvent
     bool isFollowing = false;
     SpriteRenderer spriteRenderer;
 
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Girlfriend";
         EventDescription = "Pretty cute, but she never pays any attention...";

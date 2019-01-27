@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BlocksEvent: LifeEvent
 {
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Blocks";
         EventDescription = "Playing with blocks can make you smarter";

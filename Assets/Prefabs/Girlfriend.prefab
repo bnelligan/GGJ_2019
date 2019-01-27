@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6192206445270564169}
   - component: {fileID: 6192206445270564182}
   - component: {fileID: 3371994707130389595}
-  - component: {fileID: 688833454}
   m_Layer: 0
   m_Name: Girlfriend
   m_TagString: Untagged
@@ -151,22 +150,6 @@ BoxCollider2D:
   m_Size: {x: 0.27116084, y: 0.42}
   m_EdgeRadius: 0
 --- !u!114 &3371994707130389595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6192206445270564173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 198ce434bb5464a42af59df15a7164a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EventName: 
-  EventDescription: 
-  AutoTriggerEvent: 0
-  ActivateKey: 101
---- !u!114 &688833454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

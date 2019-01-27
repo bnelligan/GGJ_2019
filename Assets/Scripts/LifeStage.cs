@@ -10,6 +10,9 @@ public class LifeStage : MonoBehaviour
 
     [SerializeField]
     Age playerAge;
+    public bool UseCustomScale = false;
+    [SerializeField]
+    Vector3 playerScale = Vector3.one;
     //[SerializeField]
     int eventCount = 20;
 
@@ -28,12 +31,20 @@ public class LifeStage : MonoBehaviour
         {
             Debug.LogError("Player not found!!");
         }
-       
+        if(UseCustomScale)
+        {
+            player.transform.localScale = playerScale;
+        }
     }
     private void Start()
     {
         //SpawnEvents();
         SetPlayerAnimatorController();
+        if (player.HasGirlfriend)
+        {
+            Instantiate(player.girlPrefab, transform.position, transform.rotation);
+        }
+        
     }
 
     private void SpawnEvents()

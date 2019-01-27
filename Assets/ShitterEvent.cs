@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShitterEvent : LifeEvent
 {
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "The Ole Shitter";
         EventDescription = "Everyone's gotta go...";

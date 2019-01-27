@@ -7,7 +7,7 @@ public class WatchTVEvent : LifeEvent
     public GameObject player;
     public LevelChanger levelChanger;
     public GameObject sitSprite;
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "tv";
         EventDescription = "tv";

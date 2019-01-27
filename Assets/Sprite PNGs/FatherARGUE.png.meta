@@ -1,9 +1,8 @@
 fileFormatVersion: 2
-guid: b544ce938419c2940868d67a86d764b6
+guid: 3ffc899b2c45fc54293ae94894618ebb
 TextureImporter:
   fileIDToRecycleName:
-    21300000: OfficePressE_0
-    21300002: OfficePressE_1
+    21300000: FatherARGUE_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -36,9 +35,9 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -82,17 +81,28 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OfficePressE_0
+      name: FatherARGUE_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 15
+        y: 4
+        width: 10
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -100,27 +110,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6cb8c250c5340b458d34a192aa4bf5d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OfficePressE_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d5a4ffbe32c8e640afe82e8014709a8
+      spriteID: ca695147fbcc35b4c8eacccc69e67426
       vertices: []
       indices: 
       edges: []
@@ -128,7 +118,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4af03b95fe8c20d40be9a68c84819e80
+    spriteID: 94fd1462f590c5349941b7dbbd5ae9cc
     vertices: []
     indices: 
     edges: []

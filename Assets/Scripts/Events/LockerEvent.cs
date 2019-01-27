@@ -10,7 +10,7 @@ public class LockerEvent : LifeEvent
     Sprite Sprite_MissingBook;
 
 
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Locker";
         EventDescription = "Cool stuff in here...";

@@ -14,14 +14,16 @@ public abstract class LifeEvent : MonoBehaviour
     public bool AutoTriggerEvent = false;
     GameObject prompt;
     public KeyCode ActivateKey = KeyCode.E;
-
-    private void Start()
+    protected virtual void Awake()
     {
-        stats = FindObjectOfType<PlayerStats>();
         prompt = Resources.Load("Prefabs/Prompt") as GameObject;
         prompt = Instantiate(prompt, transform);
         prompt.SetActive(false);
         IsTriggered = false;
+    }
+    protected virtual void Start()
+    {
+        stats = FindObjectOfType<PlayerStats>();
     }
 
     protected virtual void Update()
@@ -66,6 +68,10 @@ public abstract class LifeEvent : MonoBehaviour
     {
         Debug.Log("TRIGGERED");
         PlayerStats colliderStats = collision.GetComponent<PlayerStats>();
+        if(stats == null && colliderStats != null)
+        {
+            stats = colliderStats;
+        }
         if (colliderStats && CanTriggerEvent())
         {
             // Show popup to activate the event
@@ -75,14 +81,25 @@ public abstract class LifeEvent : MonoBehaviour
             }
             else
             {
-                ShowPrompt();
+                if(prompt)
+                {
+                    ShowPrompt();
+                }
+                else
+                {
+                    Debug.LogWarning("Error showing prompt. Null reference");
+                }
             }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         PlayerStats colliderStats = collision.GetComponent<PlayerStats>();
-        if(colliderStats && IsPromptVisible)
+        if (stats == null && colliderStats != null)
+        {
+            stats = colliderStats;
+        }
+        if (colliderStats && IsPromptVisible)
         {
             HidePrompt();
         }

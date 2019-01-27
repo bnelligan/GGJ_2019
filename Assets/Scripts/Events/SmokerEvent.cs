@@ -7,7 +7,7 @@ public class SmokerEvent : LifeEvent
     [SerializeField]
     GameObject cigPrefab;
 
-    private void Awake()
+    protected override void Awake()
     {
         EventName = "Smoker";
         EventDescription = "Smoking is bad for you... But girls might think you're cool?";
