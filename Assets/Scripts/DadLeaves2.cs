@@ -33,6 +33,12 @@ public class DadLeaves2 : MonoBehaviour
         dad.GetComponentInChildren<SpriteRenderer>().flipX = true;
         dad.GetComponent<Animator>().SetBool("dadLeave", true);
         mom.GetComponent<Animator>().SetBool("Idle",true);
+        yield return new WaitForSeconds(1.5f);
+        mom.GetComponentInChildren<SpriteRenderer>().flipX = false;
+        mom.GetComponent<Animator>().SetBool("walk",true);
+        yield return new WaitForSeconds(1.25f);
+        mom.GetComponent<Animator>().SetBool("cry",true);
+        
        
     }
 }
