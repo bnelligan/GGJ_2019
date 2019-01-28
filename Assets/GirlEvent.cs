@@ -22,8 +22,9 @@ public class GirlEvent : LifeEvent
         base.Update();
         if (isFollowing)
         {
-            float sqDist = (stats.transform.position - transform.position).sqrMagnitude;
-            if (sqDist > minDistance * minDistance)
+            float xDist = Mathf.Abs(stats.transform.position.x - transform.position.x);
+            float yDist = Mathf.Abs(stats.transform.position.y - transform.position.y);
+            if (xDist > minDistance && yDist <= 0.2f)
             {
                 bool IsLeft = stats.transform.position.x < transform.position.x;
                 Vector3 moveVec = Vector3.right * speed * Time.deltaTime;
@@ -63,7 +64,10 @@ public class GirlEvent : LifeEvent
         {
             if(HasRequiredStats())
             {
-                canTrigger = true;
+                if(!stats.HasGirlfriend)
+                {
+                    canTrigger = true;
+                }
             }
             else
             {

@@ -44,6 +44,16 @@ public class HospitalEvent : LifeEvent
         yield return new WaitForSeconds(10);
         DivineIntervention.GetComponent<Animator>().enabled = true;
         LifeSupport.GetComponent<Animator>().SetTrigger("Dead");
+        DDOLCam[] cams =  FindObjectsOfType<DDOLCam>();
+        foreach(DDOLCam c in cams)
+        {
+            Destroy(c);
+        }
+        DDOLPlayer[] players = FindObjectsOfType<DDOLPlayer>();
+        foreach(DDOLPlayer p in players)
+        {
+            Destroy(p);
+        }
         yield return new WaitForSeconds(10);
         FindObjectOfType<LevelChanger>().FadeOut();
     }
